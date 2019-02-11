@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Modal, View, Alert, Text, TouchableHighlight} from 'react-native';
 import {Button} from 'react-native-elements';
-import StylesCss from './StylesCSS/StylesCss';
+import StylesCss from '../StylesCSS/StylesCss';
 import ContentPopUp from './ContentPopUp';
 
 export default class ModalPopUp extends Component {

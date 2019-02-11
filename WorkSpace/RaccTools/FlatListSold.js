@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {FlatList, ScrollView, View, Text, Image, TouchableOpacity , ToastAndroid} from 'react-native';
 import {Badge} from 'react-native-elements';
-import StylesCss from './StylesCSS/StylesCss';
-import Dinfo from '../Screens/DataInfo/Dinfo';
+import StylesCss from '../StylesCSS/StylesCss';
+import Dinfo from '../DataInfo/Dinfo';
 
 const _renderSeparator = () => (<View style={StylesCss.Separator}/>)
 
@@ -32,7 +32,7 @@ render()   {
                                                 <Image alignItem = 'baseline'
                                                      name='RightNext'
                                                      style={{width:16, height:16}}
-                                                     source={require('C:/Users/Testouri Mohamed/Documents/GitHub/lanala/WorkSpace/Screens/Ressource/next.png')}/>                                  
+                                                     source={require('../Ressource/next.png')}/>                                  
                                                 </View>
                                             </View>
                                           </TouchableOpacity>}/>

@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {View, Text} from 'react-native';
 import {Avatar} from 'react-native-elements';
-import FlatListHome from './RaccTools/FlatListHome';
-import StylesCss from './RaccTools/StylesCSS/StylesCss';
+import FlatListHome from '../RaccTools/FlatListHome';
+import StylesCss from '../StylesCSS/StylesCss';
 
 export default class HomeScreen extends Component {
 
@@ -28,7 +28,7 @@ render()   {
     <View  style={StylesCss.container1} flexDirection= 'row' justifyContent= 'flex-start'>    
       <Avatar size= 'medium'
               rounded
-              source={require('C:/Users/Testouri Mohamed/Documents/GitHub/lanala/WorkSpace/ScreensRessource/avatar.png')}/>
+              source={require('../Ressource/avatar.png')}/>
       <View flexDirection='column'>
         <Text style={StylesCss.Sname}>Rahul Sharrna</Text>
         <Text>Online</Text>

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {TextInput, Text, Image, ScrollView, View, Button} from 'react-native';
 //import {Button} from 'react-native-elements';
-import StylesCss from './RaccTools/StylesCSS/StylesCss'
+import StylesCss from '../StylesCSS/StylesCss'
 
 class LoginScreen extends Component {
 
@@ -22,7 +22,7 @@ class LoginScreen extends Component {
   render() {   
     return (
       <ScrollView backgroundColor="#FCFCFC" style={StylesCss.container} >
-        <Image source={require('C:/Users/Testouri Mohamed/Documents/GitHub/lanala/WorkSpace/Screens/Ressource/home.png')}/> 
+        <Image source={require('../Ressource/home.png')}/> 
         <TextInput placeholder= "Username"
                   onChangeText={(text) => this.setState({text})}/>
         <TextInput placeholder= "Password"

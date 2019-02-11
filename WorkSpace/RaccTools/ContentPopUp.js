@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {View, TouchableOpacity,ScrollView, ToastAndroid, Text, Image, TextInput} from 'react-native';
-import StyleCss from './StylesCSS/StylesCss';
+import StyleCss from '../StylesCSS/StylesCss';
 import { Button } from 'react-native-elements';
 
 const _renderSeparator = () => (<View style={StylesCss.Separator}/>)
@@ -19,7 +19,7 @@ export default class ContentPopUp extends Component {
                         <TouchableOpacity   onPress={() => (this.props.navigation.navigate('HomeScreen'))}>
                             <Image name='Add'
                                 style={{width:35, height:30}}
-                                source={require('C:/Users/Testouri Mohamed/Documents/GitHub/lanala/WorkSpace/Screens/Ressource/add.png')}/>
+                                source={require('../Ressource/add.png')}/>
                         </TouchableOpacity>    
                             <Text>$</Text>
                             <TextInput onChangeText={(text)=> this.setState({text})}
@@ -27,7 +27,7 @@ export default class ContentPopUp extends Component {
                         <TouchableOpacity   onPress={() => {ToastAndroid.show("Remove",ToastAndroid.SHORT)}}>
                             <Image name='Remove'
                                 style={{width:35, height:30}}
-                                source={require('C:/Users/Testouri Mohamed/Documents/GitHub/lanala/WorkSpace/Screens/Ressource/remove.png')}/>
+                                source={require('../Ressource/remove.png')}/>
                         </TouchableOpacity>
                     </View>  
                 </View>

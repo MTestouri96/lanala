@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import {View, ScrollView, Modal, Text, TouchableHighlight} from 'react-native';
-import ToolBars from './RaccTools/ToolBars';
-import FlatListSold from './RaccTools/FlatListSold';
-import StylesCss from './RaccTools/StylesCSS/StylesCss';
+import ToolBars from '../RaccTools/ToolBars';
+import FlatListSold from '../RaccTools/FlatListSold';
+import StylesCss from '../StylesCSS/StylesCss';
 // import { Button } from 'react-native-elements';
-import ModalPopUp from './RaccTools/ModalPopUp';
+import ModalPopUp from '../RaccTools/ModalPopUp';
 
 
 
