@@ -31,6 +31,7 @@ class LoginScreen extends Component {
         <Text>Request new password.</Text>
         <View style={StylesCss.containerbtn}>
           <Button raised
+              disabled={!this.state.text}
               color="#B39DDB"
               onPress={() => (this.props.navigation.navigate('HomeScreen'))}
               title="LOGIN"/>

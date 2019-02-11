@@ -12,7 +12,7 @@ SoldScreen: {screen: SoldScreen},
 ModalPopUp:{screen: ModalPopUp}
 },
 {
-  initialRouteName: 'HomeScreen',
+  initialRouteName: 'loginScreen',
 },);
 export default createAppContainer( RootStack)  ;
   
