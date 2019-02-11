@@ -22,7 +22,7 @@ class LoginScreen extends Component {
   render() {   
     return (
       <ScrollView backgroundColor="#FCFCFC" style={StylesCss.container} >
-        <Image source={require('C:/Users/Testouri Mohamed/testapp/Assurance/WorkSpace/Ressource/home.png')}/> 
+        <Image source={require('../Ressource/home.png')}/> 
         <TextInput placeholder= "Username"
                   onChangeText={(text) => this.setState({text})}/>
         <TextInput placeholder= "Password"

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {FlatList, ScrollView, View, Text, Image, TouchableOpacity , ToastAndroid} from 'react-native';
 import {Avatar} from 'react-native-elements';
 import StylesCss from './StylesCSS/StylesCss';
-import Dinfo from 'C:/Users/Testouri Mohamed/testapp/Assurance/WorkSpace/Screens/DataInfo/Dinfo';
+import Dinfo from '../Screens/DataInfo/Dinfo';
 
 const _renderSeparator = () => (<View style={StylesCss.Separator}/>)
 
@@ -31,7 +31,7 @@ render()   {
                                               <Image alignSelf= 'center'
                                                      name='RightNext'
                                                      style={{width:16, height:16}}
-                                                     source={require('C:/Users/Testouri Mohamed/testapp/Assurance/WorkSpace/Ressource/next.png')}/>                                  
+                                                     source={require('../Ressource/next.png')}/>                                  
                                               </View>
                                           </TouchableOpacity>}/>
 
