@@ -10,12 +10,12 @@ render()
       <TouchableOpacity   onPress={() => (this.props.navigation.goBack('HomeScreen'))}>
         <Image name='LeftBack'
              style={{width:35, height:30}}
-             source={require('../Ressource/back.png')}/>
+             source={require('C:/Users/Testouri Mohamed/Documents/GitHub/lanala/WorkSpace/Screens/Ressource/back.png')}/>
       </TouchableOpacity> 
       <TouchableOpacity   onPress={() => {ToastAndroid.show("Go To History",ToastAndroid.SHORT)}}>
         <Image name='History'
              style={{width:30, height:30}}
-             source={require('../Ressource/history.png')}/>
+             source={require('C:/Users/Testouri Mohamed/Documents/GitHub/lanala/WorkSpace/Screens/Ressource/history.png')}/>
       </TouchableOpacity>
     </View>
     );

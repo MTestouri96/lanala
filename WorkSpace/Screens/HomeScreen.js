@@ -28,7 +28,7 @@ render()   {
     <View  style={StylesCss.container1} flexDirection= 'row' justifyContent= 'flex-start'>    
       <Avatar size= 'medium'
               rounded
-              source={require('../Ressource/avatar.png')}/>
+              source={require('C:/Users/Testouri Mohamed/Documents/GitHub/lanala/WorkSpace/ScreensRessource/avatar.png')}/>
       <View flexDirection='column'>
         <Text style={StylesCss.Sname}>Rahul Sharrna</Text>
         <Text>Online</Text>

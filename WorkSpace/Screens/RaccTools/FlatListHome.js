@@ -31,7 +31,7 @@ render()   {
                                               <Image alignSelf= 'center'
                                                      name='RightNext'
                                                      style={{width:16, height:16}}
-                                                     source={require('../Ressource/next.png')}/>                                  
+                                                     source={require('C:/Users/Testouri Mohamed/Documents/GitHub/lanala/WorkSpace/Screens/Ressource/next.png')}/>                                  
                                               </View>
                                           </TouchableOpacity>}/>
 
