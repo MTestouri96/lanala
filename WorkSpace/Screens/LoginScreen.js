@@ -9,7 +9,7 @@ class LoginScreen extends Component {
     super(props);
     this.state = {text: ''};
     }
-   /* static navigationOptions = {
+    static navigationOptions = {
       title: 'LoginScreen',
    headerStyle: {
         backgroundColor: '#03A9F4',
@@ -17,7 +17,7 @@ class LoginScreen extends Component {
    headerTintColor: '#fff',
       headerTitleStyle: {
         fontWeight: 'bold',
-      },}; */ 
+      },}; 
 
   render() {   
     return (

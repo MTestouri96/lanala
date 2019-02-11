@@ -10,7 +10,7 @@ export default class HomeScreen extends Component {
     super(props);
     this.state = {text: ''};
     }
-    /* static navigationOptions = {
+    static navigationOptions = {
       title: 'HomeScreen',
    headerStyle: {
         backgroundColor: '#03A9F4',
@@ -19,7 +19,7 @@ export default class HomeScreen extends Component {
       headerTitleStyle: {
         fontWeight: 'bold',
       },
-    }; */
+    }; 
 
 render()   {
   
