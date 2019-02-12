@@ -11,10 +11,10 @@ LoginScreen: {screen: LoginScreen},
 HomeScreen: {screen: HomeScreen},
 SoldScreen: {screen: SoldScreen},
 ModalPopUp:{screen: ModalPopUp},
-HistoriqueScreen:{screen:HistoriqueScreen}
+HistoriqueScreen:{screen: HistoriqueScreen}
 },
 {
-  initialRouteName: 'LoginScreen',
+  initialRouteName: 'SoldScreen',
 },);
-export default createAppContainer( RootStack)  ;
+export default createAppContainer( RootStack, )  ;
   
