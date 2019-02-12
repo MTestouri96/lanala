@@ -35,8 +35,8 @@ _incrementCount() {
       
       return (
       <View style={StylesCss.bcgrndc}>
-          <ModalPopUp/>
-          <ScrollView>
+          
+          
             <View style={StylesCss.container}>
                 <Text style={marginLeft='50'}>Votre Solde</Text>
                 <View flexDirection= 'row' justifyContent= 'center'>
@@ -44,9 +44,12 @@ _incrementCount() {
                     <Text style={StylesCss.StyleSold}>{this.state.count}</Text>
                 </View>
                 <Text style={StylesCss.txtqui}>Quittance</Text>
+                <ModalPopUp/>
+                <FlatListSold/>
             </View>
-            <FlatListSold/>
-          </ScrollView>
+           
+         
+          
       </View>
       );
     }

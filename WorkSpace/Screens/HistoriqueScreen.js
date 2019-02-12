@@ -3,6 +3,7 @@ import {View, Text} from 'react-native';
 import {Avatar} from 'react-native-elements';
 import FlatListHome from '../RaccTools/FlatListHome';
 import StylesCss from '../StylesCSS/StylesCss';
+import FlatlistHistorique from '../RaccTools/FlatlistHistorique';
 
 export default class HomeScreen extends Component {
 
@@ -11,11 +12,13 @@ export default class HomeScreen extends Component {
     this.state = {text: ''};
     }
     static navigationOptions = {
+        title:'Historique',
      
    headerStyle: {
+
         backgroundColor: '#FFFFFF',
       },
-   headerTintColor: '#03A9F4',
+   headerTintColor: '#000000',
       headerTitleStyle: {
         fontWeight: 'bold',
       },
@@ -25,16 +28,7 @@ render()   {
   
   return (
   <View style={StylesCss.bcgrndC}>
-    <View  style={StylesCss.container1} flexDirection= 'row' justifyContent= 'flex-start'>    
-      <Avatar size= 'medium'
-              rounded
-              source={require('../Ressource/avatar.png')}/>
-      <View flexDirection='column'>
-        <Text style={StylesCss.Sname}>Rahul Sharrna</Text>
-        <Text>Online</Text>
-      </View> 
-    </View>
-    <FlatListHome/>
+    <FlatlistHistorique/>
   </View>
   );
 }
