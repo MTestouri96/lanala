@@ -25,8 +25,8 @@ export default class SoldScreen extends Component {
       
       return (
       <View style={StylesCss.bcgrndc}>
-          <ModalPopUp/>
-          <ScrollView>
+          
+          
             <View style={StylesCss.container}>
                 <Text style={marginLeft='50'}>Votre Solde</Text>
                 <View flexDirection= 'row' justifyContent= 'center'>
@@ -34,9 +34,12 @@ export default class SoldScreen extends Component {
                     <Text style={StylesCss.StyleSold}>15.000</Text>
                 </View>
                 <Text style={StylesCss.txtqui}>Quittance</Text>
+                <ModalPopUp/>
+                <FlatListSold/>
             </View>
-            <FlatListSold/>
-          </ScrollView>
+           
+         
+          
       </View>
       );
     }

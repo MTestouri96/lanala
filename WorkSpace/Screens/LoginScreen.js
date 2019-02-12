@@ -9,15 +9,7 @@ class LoginScreen extends Component {
     super(props);
     this.state = {text: ''};
     }
-    static navigationOptions = {
-      title: 'LoginScreen',
-   headerStyle: {
-        backgroundColor: '#03A9F4',
-      },
-   headerTintColor: '#fff',
-      headerTitleStyle: {
-        fontWeight: 'bold',
-      },}; 
+    
 
   render() {   
     return (
@@ -33,7 +25,7 @@ class LoginScreen extends Component {
           <Button raised
               disabled={!this.state.text}
               color="#B39DDB"
-              onPress={() => (this.props.navigation.navigate('HomeScreen'))}
+              onPress={() => (this.props.navigation.navigate('SoldScreen'))}
               title="LOGIN"/>
         </View>
       </ScrollView>

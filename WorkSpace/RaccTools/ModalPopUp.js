@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import {Modal, View, Alert, Text, TouchableHighlight} from 'react-native';
-import {Button} from 'react-native-elements';
+import {Modal, View, Alert, Text, TouchableHighlight,Button} from 'react-native';
 import StylesCss from '../StylesCSS/StylesCss';
 import ContentPopUp from './ContentPopUp';
 
@@ -24,14 +23,18 @@ export default class ModalPopUp extends Component {
             }}>
             <View style={{marginTop: 22}}>
               <View>
+              <Button onPress={() => {
+                         this.setModalVisible(!this.state.modalVisible); }}
+                         title="Epargne"
+                         color="#B39DDB" />
+              
                 <ContentPopUp/>
-                <TouchableHighlight onPress={() => {this.setModalVisible(!this.state.modalVisible);}}>
-                <Text>Hide Modal</Text>
-              </TouchableHighlight>
+                
               </View>
             </View>
           </Modal>
           <Button title= 'Epargne'
+                color="#B39DDB"
                   raised
                   onPress={()=> {this.setModalVisible(true);}}/>
         </View>

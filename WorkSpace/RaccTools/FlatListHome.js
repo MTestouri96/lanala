@@ -21,8 +21,7 @@ render()   {
                   data={Dinfo}
                   renderItem={({item}) => <TouchableOpacity onPress={()=> (this.props.navigation.navigate('SoldScreen'))}>
                                             <View flexDirection= 'row' justifyContent='space-between'>
-                                              <Avatar rounded
-                                                      size= 'medium'/>
+                                             
                                               <View flexDirection='column'>
                                                 <Text style={StylesCss.big}>{item.Title}</Text>
                                                 <Text>{item.Date}</Text>
