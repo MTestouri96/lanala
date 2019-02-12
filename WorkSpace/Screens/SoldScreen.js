@@ -9,18 +9,28 @@ import ModalPopUp from '../RaccTools/ModalPopUp';
 
 export default class SoldScreen extends Component {
 
-  static navigationOptions = {
+ static navigationOptions = {
     headerRight:  <TouchableOpacity   onPress={() => {ToastAndroid.show("Go To History",ToastAndroid.SHORT)}}>
                     <Image name='History'
                           style={{width:30, height:30}}
                           source={require('../Ressource/history.png')}/>
-                   </TouchableOpacity>,
-  /*  title: ' ',
+                   </TouchableOpacity>, 
+   title: ' ',
     headerStyle: {backgroundColor: '#03A9F4',},
     headerTintColor: '#fff',
-    headerTitleStyle: {fontWeight: 'bold',}, */ 
-  }; 
+    headerTitleStyle: {fontWeight: 'bold',}, 
+}; 
 
+constructor() {
+  super();
+  this.state = {count: 0};
+}
+
+_incrementCount() {
+  this.setState = ({
+    count: count + 50
+  });
+}
     render()   {
       
       return (
@@ -31,7 +41,7 @@ export default class SoldScreen extends Component {
                 <Text style={marginLeft='50'}>Votre Solde</Text>
                 <View flexDirection= 'row' justifyContent= 'center'>
                     <Text style={StylesCss.Style$}>$</Text>
-                    <Text style={StylesCss.StyleSold}>15.000</Text>
+                    <Text style={StylesCss.StyleSold}>{this.state.count}</Text>
                 </View>
                 <Text style={StylesCss.txtqui}>Quittance</Text>
                 <ModalPopUp/>
