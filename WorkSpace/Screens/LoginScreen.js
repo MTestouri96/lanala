@@ -12,6 +12,7 @@ class LoginScreen extends Component {
 
   render() {   
     return (
+      <View style={StylesCss.container}>
       <KeyboardAvoidingView behavior ='padding' enabled='true' /*backgroundColor="#FCFCFC" style={StylesCss.container}*/  >
         <Image source={require('../Ressource/home.png')}/> 
       
@@ -22,14 +23,16 @@ class LoginScreen extends Component {
                   onChangeText={(text) => this.setState({text})}/>
       
         <Text>Request new password.</Text>
-        <View style={StylesCss.containerbtn}>
-          <Button raised
-              disabled={!this.state.text}
-              color="#B39DDB"
+        
+          <Button
+style={StylesCss.containerbtn}
+              //disabled={!this.state.text}
+              color="#1abc9c"
               onPress={() => (this.props.navigation.navigate('HomeScreen'))}
               title="LOGIN"/>
-        </View>
+    
         </KeyboardAvoidingView>
+        </View>
     );
   };
 }

@@ -22,7 +22,7 @@ export default class ModalPopUp extends Component {
                 onRequestClose={() => {Alert.alert('Modal has been closed.');
             }}>
             <View>
-              <ScrollView marginTop= '68%' style={StylesCss.bcPopUp}>
+              <View marginTop= '68%' style={StylesCss.bcPopUp} >
               <Button onPress={() => {
                          this.setModalVisible(!this.state.modalVisible); }}
                          title="Epargne"
@@ -31,8 +31,10 @@ export default class ModalPopUp extends Component {
               
                 <ContentPopUp/>
                 
-              </ScrollView>
+              </View>
             </View>
+            
+            <View style={{flex: 3, backgroundColor: '#FCFCFC'}} />
           </Modal>
           <Button title= 'Eppppppppargne'
                   position= 'fixed'

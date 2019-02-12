@@ -14,7 +14,7 @@ ModalPopUp:{screen: ModalPopUp},
 HistoriqueScreen:{screen: HistoriqueScreen}
 },
 {
-  initialRouteName: 'SoldScreen',
+  initialRouteName: 'LoginScreen',
 },);
 export default createAppContainer( RootStack, )  ;
   
