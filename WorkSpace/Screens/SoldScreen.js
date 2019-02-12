@@ -21,6 +21,16 @@ export default class SoldScreen extends Component {
     headerTitleStyle: {fontWeight: 'bold',}, 
 }; 
 
+constructor() {
+  super();
+  this.state = {count: 0};
+}
+
+_incrementCount() {
+  this.setState = ({
+    count: count + 50
+  });
+}
     render()   {
       
       return (
@@ -31,7 +41,7 @@ export default class SoldScreen extends Component {
                 <Text style={marginLeft='50'}>Votre Solde</Text>
                 <View flexDirection= 'row' justifyContent= 'center'>
                     <Text style={StylesCss.Style$}>$</Text>
-                    <Text style={StylesCss.StyleSold}>15.000</Text>
+                    <Text style={StylesCss.StyleSold}>{this.state.count}</Text>
                 </View>
                 <Text style={StylesCss.txtqui}>Quittance</Text>
             </View>
