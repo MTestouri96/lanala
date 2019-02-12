@@ -12,6 +12,15 @@ export default class FlatListHome extends Component {
     super(props);
     this.state = {text: ''};
     }
+    static navigationOptions = {
+      title: '',
+   headerStyle: {
+        backgroundColor: '#03A9F4',
+      },
+   headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+      },}; 
 
 render()   {
   

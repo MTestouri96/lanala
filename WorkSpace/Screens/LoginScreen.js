@@ -8,16 +8,7 @@ class LoginScreen extends Component {
     constructor(props) {
     super(props);
     this.state = {text: ''};
-    }
-    static navigationOptions = {
-      title: 'LoginScreen',
-   headerStyle: {
-        backgroundColor: '#03A9F4',
-      },
-   headerTintColor: '#fff',
-      headerTitleStyle: {
-        fontWeight: 'bold',
-      },}; 
+    };
 
   render() {   
     return (
