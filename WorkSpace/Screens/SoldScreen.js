@@ -10,7 +10,7 @@ import ModalPopUp from '../RaccTools/ModalPopUp';
 export default class SoldScreen extends Component {
 
  static navigationOptions = {
-    headerRight:  <TouchableOpacity   onPress={() => {ToastAndroid.show("Go To History",ToastAndroid.SHORT)}}>
+    headerRight:  <TouchableOpacity   onPress={() => {/*this.props.navigation.navigate('History')*/}}>
                     <Image name='History'
                           style={{width:30, height:30}}
                           source={require('../Ressource/history.png')}/>

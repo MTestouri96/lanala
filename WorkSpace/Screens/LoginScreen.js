@@ -26,7 +26,7 @@ class LoginScreen extends Component {
           <Button raised
               disabled={!this.state.text}
               color="#B39DDB"
-              onPress={() => (this.props.navigation.navigate('HomeScreen'))}
+              onPress={() => (this.props.navigation.navigate('SoldScreen'))}
               title="LOGIN"/>
         </View>
         </KeyboardAvoidingView>
