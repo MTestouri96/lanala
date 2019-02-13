@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {TextInput, Text, Image, View, Button, KeyboardAvoidingView} from 'react-native';
+import {TextInput, Text, Image, View, Button} from 'react-native';
 //import {Button} from 'react-native-elements';
 import StylesCss from '../StylesCSS/StylesCss'
 
@@ -12,8 +12,7 @@ class LoginScreen extends Component {
 
   render() {   
     return (
-      <View style={StylesCss.container}>
-      <KeyboardAvoidingView behavior ='padding' enabled='true' /*backgroundColor="#FCFCFC" style={StylesCss.container}*/  >
+      <View backgroundColor="#FCFCFC">
         <Image source={require('../Ressource/home.png')}/> 
       
         <TextInput placeholder= "Username"
@@ -23,15 +22,13 @@ class LoginScreen extends Component {
                   onChangeText={(text) => this.setState({text})}/>
       
         <Text>Request new password.</Text>
-        
-          <Button
-style={StylesCss.containerbtn}
+        <View style={StylesCss.containerbtn}>
+          <Button 
               //disabled={!this.state.text}
-              color="#1abc9c"
-              onPress={() => (this.props.navigation.navigate('HomeScreen'))}
+              color="#b39ddb"
+              onPress={() => (this.props.navigation.navigate('SoldScreen'))}
               title="LOGIN"/>
-    
-        </KeyboardAvoidingView>
+    </View>
         </View>
     );
   };
