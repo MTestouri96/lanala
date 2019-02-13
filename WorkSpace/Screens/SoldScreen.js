@@ -9,8 +9,8 @@ import ModalPopUp from '../RaccTools/ModalPopUp';
 
 export default class SoldScreen extends Component {
 
- static navigationOptions = {
-  headerRight:  <TouchableOpacity onPress={() => {/*this.props.navigation.navigate('History')*/}}>
+ /*static navigationOptions = {
+  headerRight:  <TouchableOpacity onPress={() => {this.props.navigation.navigate('History')}}>
                   <Image name='History'
                         style={{width:30, height:30, marginRight:16}}
                         source={require('../Ressource/history.png')}/>
@@ -20,7 +20,7 @@ export default class SoldScreen extends Component {
   headerStyle: {backgroundColor: '#FCFCFC',},
   headerTintColor: '#000000',
   headerTitleStyle: {fontWeight: 'bold',}, 
-}; 
+}*/
 
 constructor() {super();
               this.state = {count: 0};}
