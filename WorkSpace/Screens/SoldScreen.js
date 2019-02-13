@@ -32,7 +32,7 @@ constructor() {super();
             <Text style={marginLeft='50'}>Votre Solde</Text>
             <View flexDirection= 'row' justifyContent= 'center'>
               <Text style={StylesCss.Style$}>$</Text>
-              <Text style={StylesCss.StyleSold}>{this.state.count}</Text>     
+              <Text style={StylesCss.StyleSold}>{this.state.count }</Text>     
             </View>
             <Text style={StylesCss.txtqui}>Quittance</Text>
             <ModalPopUp/>
