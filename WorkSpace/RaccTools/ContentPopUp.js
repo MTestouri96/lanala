@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {View, TouchableOpacity,ScrollView, ToastAndroid, Text, Image, TextInput,StyleSheet,Button} from 'react-native';
 import StyleCss from '../StylesCSS/StylesCss';
-
+import SoldScreen from '../Screens/SoldScreen';
 
 const _renderSeparator = () => (<View style={StylesCss.Separator}/>)
 
@@ -23,7 +23,7 @@ export default class ContentPopUp extends Component {
                     <Text ItemSeparatorComponent={_renderSeparator}>Price Range</Text>
                     
                     <View flexDirection= 'row' justifyContent= 'space-around' alignItem= 'baseline'>
-                        <TouchableOpacity   onPress={this.add}>
+                        <TouchableOpacity   onPress={[this.add]}>
                             <Image name='Add'
                                 style={{width:35, height:30}}
                                 source={require('../Ressource/add.png')}/>
