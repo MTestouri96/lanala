@@ -29,7 +29,6 @@ export default class SoldScreen extends Component {
 
 
     render()   {
-      
       return (
       <View style={StylesCss.bcgrndc}>
           
@@ -45,10 +44,11 @@ export default class SoldScreen extends Component {
                 <ModalPopUp/>
                 <FlatListSold/>
             </View>
-           
-         
-          
-      </View>
+            <Text style={StylesCss.txtqui}>Quittance</Text>
+            <ModalPopUp/>
+            <FlatListSold/>
+          </View>
+        </View>
       );
     }
     }

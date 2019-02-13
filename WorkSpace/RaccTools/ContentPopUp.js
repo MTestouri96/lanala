@@ -12,27 +12,18 @@ export default class ContentPopUp extends Component {
         this.state = { count: 0 }
       }
 
-                        onPress = () => {
-                            this.setState({
-                              count: this.state.count+50
-                              
-                            })
-                          }
-                          onpres=()=>{
-                              this.setState({
-                                  count:this.state.count-50
-                              })
-                          }
+    add = () => {this.setState({count: this.state.count+50})}
+    remove=()=>{this.setState({count:this.state.count-50})}
 
     render () {
         return(
-            <ScrollView>
+            <View>
                 <View   style={StyleCss.bcPopUp}>
 
                     <Text ItemSeparatorComponent={_renderSeparator}>Price Range</Text>
                     
                     <View flexDirection= 'row' justifyContent= 'space-around' alignItem= 'baseline'>
-                        <TouchableOpacity   onPress={this.onPress}>
+                        <TouchableOpacity   onPress={this.add}>
                             <Image name='Add'
                                 style={{width:35, height:30}}
                                 source={require('../Ressource/add.png')}/>
@@ -46,7 +37,7 @@ export default class ContentPopUp extends Component {
                            </Text>
                       </View>
 
-                        <TouchableOpacity  onPress={this.onpres}>
+                        <TouchableOpacity  onPress={this.remove}>
                             <Image name='Remove'
                                 style={{width:35, height:30}}
                                 source={require('../Ressource/remove.png')}/>
@@ -59,7 +50,7 @@ export default class ContentPopUp extends Component {
                         raised
                         onPress={()=> {/*Do Something*/}}/>
                         </View>
-            </ScrollView>
+            </View>
         );
     }
 }
