@@ -1,36 +1,33 @@
 import React, {Component} from 'react';
-import {View, ScrollView, Text, TouchableOpacity, Image} from 'react-native';
+import {View, ScrollView, Text, TouchableOpacity, Image,Button} from 'react-native';
 import FlatListSold from '../RaccTools/FlatListSold';
 import StylesCss from '../StylesCSS/StylesCss';
-// import { Button } from 'react-native-elements';
 import ModalPopUp from '../RaccTools/ModalPopUp';
-
+import {createStackNavigator,createAppContainer} from 'react-navigation'
+import HistoriqueScreen from './HistoriqueScreen';
 
 
 export default class SoldScreen extends Component {
 
+  
+  constructor(props) {
+    super(props);
+    this.state = {text: ''};
+    };
+
  static navigationOptions = {
-    headerRight:  <TouchableOpacity   onPress={() => {ToastAndroid.show("Go To History",ToastAndroid.SHORT)}}>
+    headerRight:  
                     <Image name='History'
                           style={{width:30, height:30}}
                           source={require('../Ressource/history.png')}/>
-                   </TouchableOpacity>, 
-   title: ' ',
-    headerStyle: {backgroundColor: '#03A9F4',},
-    headerTintColor: '#fff',
-    headerTitleStyle: {fontWeight: 'bold',}, 
+                   , 
+   
+                     headerStyle: {backgroundColor: '#FFFFFF',},
+                     headerTintColor: '#000000',
+                     headerTitleStyle: {fontWeight: 'bold',}, 
 }; 
 
-constructor() {
-  super();
-  this.state = {count: 0};
-}
 
-_incrementCount() {
-  this.setState = ({
-    count: count + 50
-  });
-}
     render()   {
       
       return (
@@ -38,10 +35,11 @@ _incrementCount() {
           
           
             <View style={StylesCss.container}>
+            <Button onPress={()=> this.props.navigation.navigate('HistoriqueScreen')} title="bravo"></Button>
                 <Text style={marginLeft='50'}>Votre Solde</Text>
                 <View flexDirection= 'row' justifyContent= 'center'>
                     <Text style={StylesCss.Style$}>$</Text>
-                    <Text style={StylesCss.StyleSold}>{this.state.count}</Text>
+                    <Text style={StylesCss.StyleSold}>15</Text>
                 </View>
                 <Text style={StylesCss.txtqui}>Quittance</Text>
                 <ModalPopUp/>
@@ -54,3 +52,9 @@ _incrementCount() {
       );
     }
     }
+
+    
+    
+    
+
+    

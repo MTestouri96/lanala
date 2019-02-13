@@ -6,15 +6,27 @@ import ModalPopUp from './WorkSpace/RaccTools/ModalPopUp';
 import {createStackNavigator, createAppContainer} from 'react-navigation';
 import HistoriqueScreen from './WorkSpace/Screens/HistoriqueScreen';
 
+
+class App extends Component{
+  render() {
+    return (
+      <View>
+       <LoginScreen/>
+        
+      </View>
+    );
+  }
+}
+
 const RootStack = createStackNavigator({
+
 LoginScreen: {screen: LoginScreen},
 HomeScreen: {screen: HomeScreen},
 SoldScreen: {screen: SoldScreen},
-ModalPopUp:{screen: ModalPopUp},
 HistoriqueScreen:{screen:HistoriqueScreen}
-},
-{
-  initialRouteName: 'LoginScreen',
 },);
-export default createAppContainer( RootStack)  ;
+ 
+const lol = createAppContainer(RootStack);
+
+export default lol ;
   
