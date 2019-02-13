@@ -4,13 +4,10 @@ import StylesCss from '../StylesCSS/StylesCss';
 import ContentPopUp from './ContentPopUp';
 
 export default class ModalPopUp extends Component {
-    state = {
-      modalVisible: false,
-    };
-  
-    setModalVisible(visible) {
-      this.setState({modalVisible: visible});
-    }
+    
+  state = {modalVisible: false,};
+    
+    setModalVisible(visible) {this.setState({modalVisible: visible});}
   
     render() {
       return (
@@ -19,29 +16,21 @@ export default class ModalPopUp extends Component {
                 animationType="slide"
                 transparent={true}
                 visible={this.state.modalVisible}
-                onRequestClose={() => {Alert.alert('Modal has been closed.');
-            }}>
+                onRequestClose={() => {Alert.alert('Modal has been closed.');}}>
             <View>
-              <View marginTop= '68%' style={StylesCss.bcPopUp} >
-              <Button onPress={() => {
-                         this.setModalVisible(!this.state.modalVisible); }}
-                         title="Epargne"
-                         color="#B39DDB" 
-                         />
-              
+              <View marginTop= '60%' style={StylesCss.bcPopUp} >
+                <Button onPress={() => {
+                        this.setModalVisible(!this.state.modalVisible); }}
+                        title="Epargne"
+                        color="#B39DDB"/>
                 <ContentPopUp/>
-                
               </View>
-            </View>
-            
+            </View>  
             <View style={{flex: 3, backgroundColor: '#FCFCFC'}} />
           </Modal>
           <Button title= 'Eppppppppargne'
                   position= 'fixed'
-                color="#B39DDB"
+                  color="#B39DDB"
                   raised
                   onPress={()=> {this.setModalVisible(true);}}/>
-        </View>
-      );
-    }
-  }
+        </View>);}}

@@ -23,7 +23,6 @@ export default class FlatListHome extends Component {
       },}; 
 
 render()   {
-  
   return (
         <FlatList ItemSeparatorComponent={_renderSeparator} 
                   style={StylesCss.container2}

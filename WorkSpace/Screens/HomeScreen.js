@@ -10,19 +10,8 @@ export default class HomeScreen extends Component {
     super(props);
     this.state = {text: ''};
     }
-    static navigationOptions = {
-     
-   headerStyle: {
-        backgroundColor: '#FFFFFF',
-      },
-   headerTintColor: '#03A9F4',
-      headerTitleStyle: {
-        fontWeight: 'bold',
-      },
-    }; 
 
 render()   {
-  
   return (
   <View style={StylesCss.bcgrndC}>
     <View  style={StylesCss.container1} flexDirection= 'row' justifyContent= 'flex-start'>    

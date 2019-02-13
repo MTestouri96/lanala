@@ -14,7 +14,8 @@ ModalPopUp:{screen: ModalPopUp},
 HistoriqueScreen:{screen: HistoriqueScreen}
 },
 {
-  initialRouteName: 'LoginScreen',
+  initialRouteName: 'SoldScreen',
 },);
-export default createAppContainer( RootStack, )  ;
+const apcn = createAppContainer(RootStack) ;
+export default apcn;
   
