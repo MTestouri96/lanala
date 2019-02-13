@@ -23,11 +23,12 @@ export default class FlatListHome extends Component {
       },}; 
 
 render()   {
+  
   return (
         <FlatList ItemSeparatorComponent={_renderSeparator} 
                   style={StylesCss.container2}
                   data={Dinfo}
-                  renderItem={({item}) => <TouchableOpacity onPress={()=> (this.props.navigation.push('SoldScreen'))}>
+                  renderItem={({item}) => <TouchableOpacity onPress={()=> (('SoldScreen'))}>
                                             <View flexDirection= 'row' justifyContent='space-between'>
                                              
                                               <View flexDirection='column'>

@@ -33,7 +33,7 @@ export default class SoldScreen extends Component {
       <View style={StylesCss.bcgrndc}>
           
           
-            <View style={StylesCss.container}>
+            <View>
             <Button onPress={()=> this.props.navigation.navigate('HistoriqueScreen')} title="bravo"></Button>
                 <Text style={marginLeft='50'}>Votre Solde</Text>
                 <View flexDirection= 'row' justifyContent= 'center'>
@@ -48,10 +48,11 @@ export default class SoldScreen extends Component {
             <ModalPopUp/>
             <FlatListSold/>
           </View>
-        </View>
+        
       );
+    
     }
-    }
+  }
 
     
     
