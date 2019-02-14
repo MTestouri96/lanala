@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {FlatList, View, Text, Image, TouchableOpacity} from 'react-native';
+import {FlatList, View, Text, Image, TouchableHighlight} from 'react-native';
 import {Avatar} from 'react-native-elements';
 import StylesCss from '../StylesCSS/StylesCss';
 import Dinfo from '../DataInfo/Dinfo';
@@ -28,7 +28,9 @@ render()   {
         <FlatList ItemSeparatorComponent={_renderSeparator} 
                   style={StylesCss.container2}
                   data={Dinfo}
-                  renderItem={({item}) => <TouchableOpacity onPress={()=> (('SoldScreen'))}>
+                  renderItem={({item}) => 
+                          
+                  <TouchableHighlight onPress={()=>  (this.props.navigation.navigate('HistoriqueScreen'))}>
                                             <View flexDirection= 'row' justifyContent='space-between'>
                                              
                                               <View flexDirection='column'>
@@ -40,7 +42,8 @@ render()   {
                                                      style={{width:16, height:16}}
                                                      source={require('../Ressource/next.png')}/>                                  
                                               </View>
-                                          </TouchableOpacity>}/>
+                    </TouchableHighlight>      }
+                                          />
 
     )
   };

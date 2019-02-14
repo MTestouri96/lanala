@@ -25,13 +25,17 @@ export default class FlatlistHistorique extends Component {
                                                             <View flexDirection='column'>
                                                                 <Text style={StylesCss.big}>{item.Title}</Text>
                                                                 <Text>{item.Date}</Text>
+                                                                
                                                             </View>
                                                             
                                                            </View>
+                                                           
                                                           
                                                            <View flexDirection='row' justifyContent='flex-end'>
                                                             
-                                                             <Text  textAlign='right' >{item.Sold}</Text>
+                                                           <View  justifyContent='flex-end'>
+                                                           <Text >{item.Sold}</Text>
+                                                                </View>
                                                              <Image alignSelf= 'center'
                                                                 name='RightNext'
                                                                 style={{width:16, height:16}}

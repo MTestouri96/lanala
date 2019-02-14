@@ -5,7 +5,7 @@ import SoldScreen from './WorkSpace/Screens/SoldScreen';
 import ModalPopUp from './WorkSpace/RaccTools/ModalPopUp';
 import {createStackNavigator, createAppContainer} from 'react-navigation';
 import HistoriqueScreen from './WorkSpace/Screens/HistoriqueScreen';
-
+import FlatListHome from './WorkSpace/RaccTools/FlatListHome'
 
 class App extends Component{
   render() {
@@ -22,6 +22,7 @@ const RootStack = createStackNavigator({
 
 LoginScreen: {screen: LoginScreen},
 HomeScreen: {screen: HomeScreen},
+FlatListHome:{screen:FlatListHome },
 SoldScreen: {screen: SoldScreen},
 HistoriqueScreen:{screen:HistoriqueScreen}
 },);

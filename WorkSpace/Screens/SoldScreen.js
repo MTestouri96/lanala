@@ -14,10 +14,14 @@ export default class SoldScreen extends Component {
     };
 
  static navigationOptions = {
-    headerRight:  <Image name='History'
+    headerRight: 
+             
+                     <Image name='History'
+                     onPress={()=> this.props.navigation.navigate('HistoriqueScreen')}
                           style={{width:30, height:30}}
-                          source={require('../Ressource/history.png')}/>, 
-   
+                          source={require('../Ressource/history.png')}/>
+                          , 
+                             
                      headerStyle: {backgroundColor: '#FFFFFF',},
                      headerTintColor: '#000000',
                      headerTitleStyle: {fontWeight: 'bold',}, 
@@ -29,7 +33,7 @@ export default class SoldScreen extends Component {
       <View style={StylesCss.bcgrndc}>
           
           
-            <View style={StylesCss.container}>
+            <View backgroundColor="#FCFCFC">
             <Button onPress={()=> this.props.navigation.navigate('HistoriqueScreen')} title="bravo"/>
                 <Text style={marginLeft='50'}>Votre Solde</Text>
                 <View flexDirection= 'row' justifyContent= 'center'>

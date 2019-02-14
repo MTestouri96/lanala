@@ -12,7 +12,7 @@ export default class HomeScreen extends Component {
     this.state = {text: ''};
     }
     static navigationOptions = {
-        title:'Historique',
+        title:'                   Historique',
      
    headerStyle: {
 

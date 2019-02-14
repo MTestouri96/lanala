@@ -28,7 +28,7 @@ export default class ModalPopUp extends Component {
             </View>  
             <View style={{flex: 3, backgroundColor: '#FCFCFC'}} />
           </Modal>
-          <Button title= 'Eppppppppargne'
+          <Button title= 'Epargne'
                   position= 'fixed'
                   color="#B39DDB"
                   raised

@@ -30,6 +30,22 @@ export default StylesCss= StyleSheet.create({
                marginTop: 50,
                marginBottom: 50,
           },
+          containerlog: {
+               marginTop: 20,
+               marginLeft: 20,
+          },
+          ButtonText:{
+               textAlign:'center',
+               fontSize:15,
+               color:'#ecf0f1'
+          },
+          BoutonContainer:{
+               height:50,
+               borderRadius:50,
+               backgroundColor:'#B39DDB',
+               paddingVertical:10,
+               justifyContent:'center'
+          },
      Separator: {height: 1, 
                backgroundColor: '#b39ddb',  
                marginTop:10, 
