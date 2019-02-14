@@ -11,7 +11,7 @@ class App extends Component{
   render() {
     return (
       <View>
-       <LoginScreen/>
+       <SoldScreen/>
         
       </View>
     );

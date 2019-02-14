@@ -1,13 +1,15 @@
-import React, {Component} from 'react';
-import {View, Text, Image, Button} from 'react-native';
+import React, { Component } from 'react';
+import { View, Text, Image, Button } from 'react-native';
 import FlatListSold from '../RaccTools/FlatListSold';
 import StylesCss from '../StylesCSS/StylesCss';
 import ModalPopUp from '../RaccTools/ModalPopUp';
 
 
+
+
 export default class SoldScreen extends Component {
 
-  
+
   constructor(props) {
     super(props);
     this.state = {text: ''};
@@ -48,14 +50,20 @@ export default class SoldScreen extends Component {
             <ModalPopUp/>
             <FlatListSold/>
           </View>
-        
-      );
-    
-    }
+          <Text style={StylesCss.txtqui}>Quittance</Text>
+          <ModalPopUp />
+          <FlatListSold />
+        </View>
+        <Text style={StylesCss.txtqui}>Quittance</Text>
+        <ModalPopUp />
+        <FlatListSold />
+      </View>
+    );
   }
+}
 
-    
-    
-    
 
-    
+
+
+
+

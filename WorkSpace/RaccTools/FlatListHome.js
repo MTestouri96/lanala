@@ -4,7 +4,7 @@ import {Avatar} from 'react-native-elements';
 import StylesCss from '../StylesCSS/StylesCss';
 import Dinfo from '../DataInfo/Dinfo';
 
-const _renderSeparator = () => (<View style={StylesCss.Separator}/>)
+const _renderSeparator = () => (<View style={StylesCss.Separator} />)
 
 export default class FlatListHome extends Component {
 
@@ -47,4 +47,9 @@ render()   {
 
     )
   };
+
+
+
+
+
 }
