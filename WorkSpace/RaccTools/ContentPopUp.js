@@ -23,7 +23,7 @@ export default class ContentPopUp extends Component {
                     <Text ItemSeparatorComponent={_renderSeparator}>Price Range</Text>
                     
                     <View flexDirection= 'row' justifyContent= 'space-around' alignItem= 'baseline'>
-                        <TouchableOpacity   onPress={[this.add]}>
+                        <TouchableOpacity   onPress={this.add}>
                             <Image name='Add'
                                 style={{width:35, height:30}}
                                 source={require('../Ressource/add.png')}/>

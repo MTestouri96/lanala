@@ -3,6 +3,7 @@ import {Modal, View, Alert, ScrollView, TouchableHighlight,Button} from 'react-n
 import StylesCss from '../StylesCSS/StylesCss';
 import ContentPopUp from './ContentPopUp';
 
+
 export default class ModalPopUp extends Component {
     
   state = {modalVisible: false,};
